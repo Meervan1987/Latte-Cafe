@@ -1,0 +1,44 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff; /* Burgundy to match Section6 */
+    color: #201b1b;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.footer-top, .footer-middle, .footer-bottom {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footer-top ul, .footer-middle ul, .footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.footer-top li, .footer-middle li, .footer-bottom li {
+    margin: 0;
+}
+
+.footer-top a, .footer-middle a {
+    color: #1e1919;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-top a:hover, .footer-middle a:hover {
+    color: #d2b48c;
+}
+

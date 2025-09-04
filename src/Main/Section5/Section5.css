@@ -1,0 +1,52 @@
+.section5 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #d2b48c; /* Mustard yellow from the screenshot */
+}
+
+.gallery-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.gallery-left, .gallery-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.left-top, .left-bottom, .right-image {
+    flex: 1;
+}
+
+.right-image {
+    height: 100%; /* Ensure the right image takes full height of its container */
+}
+
+.right-image img {
+    object-fit: cover; /* Maintain aspect ratio and cover the space */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column;
+    }
+    .gallery-left, .gallery-right {
+        width: 100%;
+    }
+}
